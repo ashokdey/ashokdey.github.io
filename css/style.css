@@ -159,7 +159,7 @@ body, html
 }
 
 
-@media screen and (min-width: 300px) and (max-width:600) {
+@media screen and (min-width: 301px) and (max-width:600) {
     .about h5 {
         width: 42%;
         padding: 2%;
@@ -172,5 +172,23 @@ body, html
     .projects h5{
         width: 35%;
         padding: 2%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+
+    .about h5 {
+        width: 42%;
+        padding: 2%;
+    }
+
+    .education h5 {
+        width: 42%;
+        padding: 4%;
+    }
+
+    .projects h5{
+        width: 36%;
+      padding: 2%;
   }
 }
