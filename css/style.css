@@ -127,29 +127,50 @@ body, html
     text-align: left;
 }
 
-
-@media (max-width: 600px) {
+@media screen and (min-width: 992px) {
 
     .education h5 {
-        width: 25%;
+        width: 55%;
+        padding: 4%;
     }
 
     .projects h5{
-        width: 22%;
+        width: 23%;
+      padding: 2%;
+  }
+}
+
+
+
+@media screen and (min-width: 601px) and (max-width: 992px) {
+    .about h5 {
+        width: 28%;
+        padding: 2%;
+    }
+
+    .education h5 {
+        width: 23%;
+    }
+
+    .projects h5{
+        width: 20%;
         padding: 2%;
   }
 }
 
 
-@media (max-width: 992px) {
+@media screen and (min-width: 300px) and (max-width:600) {
+    .about h5 {
+        width: 42%;
+        padding: 2%;
+    }
 
     .education h5 {
-        width: 20%;
-        padding: 1%;
+        width: 42%;
     }
 
     .projects h5{
-        width: 17%;
-      padding: 1%;
+        width: 35%;
+        padding: 2%;
   }
 }
