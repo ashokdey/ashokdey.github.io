@@ -67,14 +67,26 @@
                 h: 50,
             };
             
-            canvas.addEventListener('mousedown', function() {
-               console.log('mouse clicked');  
-                player.isMoving = true;
+//             canvas.addEventListener('mousedown', function() {
+//                console.log('mouse clicked');  
+//                 player.isMoving = true;
+//             });
+            
+//             canvas.addEventListener('mouseup', function(){
+//                 console.log('mouse left');
+//                 player.isMoving = false;
+//             });
+            
+            $(document).ready(function(){
+                $('#myCanvas').on('mousedown touchstart', function() {
+                    player.isMoving = true;
+                });
             });
             
-            canvas.addEventListener('mouseup', function(){
-                console.log('mouse left');
-                player.isMoving = false;
+            $(document).ready(function(){
+                $('#myCanvas').on('mouseup touchend', function() {
+                    player.isMoving = false;
+                });
             });
             
             $(document).ready(function(){
