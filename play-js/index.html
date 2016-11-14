@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Game</title>
+    <title>Mini Game</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" 
+            crossorigin="anonymous">
+    </script>
 </head>
 <body>
    <h3>A simple JS game....</h3>
@@ -16,7 +19,7 @@
     <script>
         var canvas = document.getElementById('myCanvas');
         var pen = canvas.getContext('2d');
-        var button = document.getElementById('move-btn');
+        //var button = document.getElementById('move-btn');
 
         
         GAME_RUNNING = true;
@@ -74,14 +77,16 @@
                 player.isMoving = false;
             });
             
-            button.addEventListener('mousedown', function(){
-               console.log('move button pressed');
-                player.isMoving = true;
+            $(document).ready(function(){
+                $('#move-btn').on('mousedown touchstart', function() {
+                    player.isMoving = true;
+                });
             });
             
-            button.addEventListener('mouseup', function(){
-               console.log('button left');
-               player.isMoving = false;
+            $(document).ready(function(){
+                $('#move-btn').on('mouseup touchend', function() {
+                    player.isMoving = false;
+                });
             });
             
         }
