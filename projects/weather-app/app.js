@@ -1,11 +1,5 @@
 'use strict';
 
-/**
- * App Design
- * -------------
- * Get user location
- * Give option to search
- */
 let fullAddress = '';
 
 //get user location
