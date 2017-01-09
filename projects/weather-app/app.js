@@ -80,7 +80,7 @@ let updateWeather = (wObj) =>
 {
 	cityName.textContent = wObj.cityName;
 	wSummary.textContent = `Weather : ${wObj.summary}`;
-	wRealTemp.textContent =  `Real : ${wObj.realTemp} \u00B0C`;
+	wRealTemp.textContent =  `${wObj.realTemp} \u00B0C`;
 	wFeelsLike.textContent = `Feels Like : ${wObj.feelsLike} \u00B0C`;
 	wHumidity.textContent = `Humidity : ${wObj.humidity}%`;
 	inputBox.value = '';
