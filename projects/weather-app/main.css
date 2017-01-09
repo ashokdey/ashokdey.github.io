@@ -32,6 +32,8 @@
         border: solid 3px #2c3e50;
         padding: 5px;
         color: #2980b9;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #search-btn {
@@ -106,6 +108,8 @@
         padding: 5px;
         color: #2980b9;
         margin-bottom: 7%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #search-btn {
