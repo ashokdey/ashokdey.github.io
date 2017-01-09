@@ -72,7 +72,7 @@
     footer a {
         font-size: 0.8em;
         font-weight: bold;
-        color: #c0392b;
+        color: #000;
     }
 
 }
@@ -88,8 +88,8 @@
     }
 
     h1 {
-        font-size: 4em;
-        margin-bottom: -10px;
+        font-size: 3em;
+        margin-bottom: -35px;
     }
 
     #input-box {
@@ -151,7 +151,7 @@
     footer a {
         font-size: 0.8em;
         font-weight: bold;
-        color: #c0392b;
+        color: #000;
     }
 
 }
