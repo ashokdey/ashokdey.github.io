@@ -1,28 +1,34 @@
 <!doctype html>
 <html>
 <head><title>WeatherApp</title>
-  <link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="main.css">
+  	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai:400,700,800" rel="stylesheet">  
+  	<link rel="icon" href="favicon.ico">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
 <div class="main">
 	<div id="search">
 	<h1>Weather Anytime </h1><br>
-	<form>
-		City Name <input type="text" id="city">
-		<button id="search-btn" type="submit">Show weather</button>
-	</form>
+		<input type="text" id="input-box">
+		<a href="#" id="search-btn" type="submit">GO</a>
+		<p class="help">Enter your city, address or zip code..Hit ENTER!</p>
 	</div>
 
 	<div id="load">
-	<div id="weather">
-		<h1 id="weatherCity">City name</h1>
-		<div id="weatherDescription">Weather Description</div>
-        <div id="weatherTemperature">Temperature</div>
-		
+	<div id="weather-box">
+		<h3 id="city-name">City name</h3>
+        <div id="realTemp">Temperature</div>
+        <div id="feelsLike">Temperature</div>
+		<div id="humidity">Humidity</div>
+		<div id="summary">Weather Description</div>
 	</div>
-
+	<br>
+	<footer>
+		<a href="https://darksky.net/poweredby/">Powered by Dark Sky</a>
+	</footer>
 	<script src="app.js"></script>
-
 
 </body>
 </html>
