@@ -6,6 +6,54 @@
  * Get user location
  * Give option to search
  */
+let fullAddress = '';
+
+//get user location
+let requestWeather = (URL) => {
+					/**
+				 * There is Same-Origin Policy due to which 
+				 * here we have to use jQuery to load content from 
+				 * different domain
+				 * it took a long time to solve this 
+				 * therefore don't take this for granted
+				 * read about Same-Origin Policy and practice it
+				*/
+				$.ajax({
+					dataType: 'jsonp',
+					url: URL,
+					type: 'GET',
+					success: function (wData) {
+						//console.log(wData);
+						var weatherObject = new Weather(fullAddress, wData.currently.summary,
+						wData.currently.temperature, wData.currently.apparentTemperature, 
+						wData.currently.humidity);
+
+						// finally show the weather
+						updateWeather(weatherObject);
+					},
+				}).fail(() => {
+					alert('Something broke while fetching weather');
+				});
+}
+
+let autoLocate = () => {
+	if (navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition((pos) => {
+			let lat = pos.coords.latitude;
+			let lng = pos.coords.longitude;
+
+			//construct the url
+			let autoURL = `https://api.darksky.net/forecast/6cad342a1caf0f17020d8228ed704249/${lat},${lng}?units=si&exclude=minutely,hourly,daily,flags`;
+
+			//get the weather
+			requestWeather(autoURL);
+		});
+	}
+	else {
+		console.log('No GeoLocation support');
+	}
+}
+
 
 
 // the DOM elemets are here
@@ -80,7 +128,7 @@ let searchWeather = (event) =>
 				//get latitude, longitude and formatted_address from the geoData 
 				let latitude = geoData.results[0].geometry.location.lat;
 				let longitude = geoData.results[0].geometry.location.lng;
-				let fullAddress = geoData.results[0].formatted_address;
+				fullAddress = geoData.results[0].formatted_address;
 
 				//once we got the latitude and longitude, we can connect to the
 				// darksky weather api
@@ -91,32 +139,8 @@ let searchWeather = (event) =>
 				//console.log(darkSkyURL);
 
 				//create the weather request from darksky
-				/**
-				 * There is Same-Origin Policy due to which 
-				 * here we have to use jQuery to load content from 
-				 * different domain
-				 * it took a long time to solve this 
-				 * therefore don't take this for granted
-				 * read about Same-Origin Policy and practice it
-				*/
-				$.ajax({
-					dataType: 'jsonp',
-					url: darkSkyURL,
-					type: 'GET',
-					success: function (wData) {
-						//console.log(wData);
-						var weatherObject = new Weather(fullAddress, wData.currently.summary,
-						wData.currently.temperature, wData.currently.apparentTemperature, 
-						wData.currently.humidity);
-
-						updateWeather(weatherObject);
-					},
-				}).fail(() => {
-					alert('Something broke while fetching weather');
-				});
-				// finally show the weather
-				//updateWeather(weatherObject);
-			
+				requestWeather(darkSkyURL);
+							
 			}
 			else {
 				alert('Please check the address');
@@ -131,6 +155,8 @@ let searchWeather = (event) =>
 	googleMaps.send();
 };
 
+
+autoLocate();
 
 // call the serach weather function on submit
 searchButton.addEventListener('click', searchWeather);
