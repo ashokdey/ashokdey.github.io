@@ -15,7 +15,7 @@ let requestWeather = (URL) => {
 				$.ajax({
 					dataType: 'jsonp',
 					url: URL,
-					type: 'GET',
+					method: 'GET',
 					success: function (wData) {
 						//console.log(wData);
 						var weatherObject = new Weather(fullAddress, wData.currently.summary,
