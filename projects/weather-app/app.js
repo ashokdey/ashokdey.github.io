@@ -51,6 +51,7 @@ let autoLocate = () => {
 
 
 // the DOM elemets are here
+let imageTag  = document.querySelector('#img-tag');
 var searchButton = document.querySelector('#search-btn');
 let loadingText  = document.querySelector('#load');
 var weatherBox = document.querySelector('#weather-box');
@@ -95,7 +96,6 @@ let searchWeather = (event) =>
 
 	var cityName = inputBox.value;
 
-	loadingText.style.display= 'block';
 	weatherBox.style.display= 'none';
 
 	if(cityName.length == 0){
@@ -160,4 +160,15 @@ inputBox.addEventListener('keypress', () => {
 	if (event.keyCode === 13 || event.which === 13) {
 		searchWeather(event);
 	}
+});
+
+$(document).ajaxStart(() => {
+	imageTag.style.display = 'block';
+	//console.log('ajax started');
+});
+
+
+$(document).ajaxStop(() => {
+	imageTag.style.display = 'none';
+	//console.log('ajax started');
 });
