@@ -13,7 +13,7 @@
 <div class="main">
 	<div id="search">
 	<h1>Weather Anytime </h1><br>
-		<p class="help">Enter your <span id="help"></span></p>
+		<p class="help">Enter your <span id="help"></span> and hit ENTER!</p>
 		<img src="images/loader.gif" alt="loading" id = "img-tag">
 		<p class="hint">
 			(Allow location access and get weather of your location without typing)
@@ -38,7 +38,7 @@
 	<script>
 		$(function(){
 			$("#help").typed({
-				strings: ['CITY,', 'or ADDRESS',  'or ZIP CODE', 'and hit ENTER!'],
+				strings: ['CITY,', 'or ADDRESS',  'or ZIP CODE'],
 				typeSpeed: 50,
 				loop : true
 			});
