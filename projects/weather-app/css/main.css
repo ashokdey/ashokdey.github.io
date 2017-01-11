@@ -20,6 +20,14 @@
         margin-bottom: 2%;
     }
 
+    .typed-cursor {
+        display: none;
+    }
+
+    p #help {
+        font-size: 1.3em;
+    }
+
     p.hint {
         font-size: 0.9em;
         color: #2c3e50;
@@ -108,7 +116,7 @@
         margin-bottom: -35px;
     }
 
-        #img-tag {
+    #img-tag {
         width: 40px;
         display: none;
         height: 40px;
@@ -121,8 +129,15 @@
         font-weight: bolder;
         color: #2c3e50;
     }
-
     
+    .typed-cursor {
+        display: none;
+    }
+
+    p #help {
+        font-size: 1.3em;
+    }
+
     p.hint {
         font-size: 0.9em;
         color: #2c3e50;
