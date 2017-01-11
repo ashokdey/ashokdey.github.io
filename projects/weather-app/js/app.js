@@ -73,7 +73,7 @@ function Weather(cityName, summary, realTemp, appareantTemp, humidity)
 	this.summary = summary;
 	this.realTemp = realTemp;
 	this.feelsLike = appareantTemp;
-	this.humidity = humidity * 100;
+	this.humidity = (humidity * 100).toFixed(2);
 }
 
 //function to update weather
