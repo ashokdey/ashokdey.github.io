@@ -1,6 +1,5 @@
 'use strict';
 console.log('--------------------------\nWelcome geek, why you are viewing the console. Fork it from github. :)\n--------------------------\nAlso try to make the "Edit Button" work.\nThanks\n===================');
-console.log('\n-|--|--|--|--|--|--|--|--|--|--|--|\napp.js loaded successfully');
 // Lets use jQuery for this
 
 //Adding all the Event listeners
