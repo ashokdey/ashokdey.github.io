@@ -152,7 +152,7 @@ let searchWeather = (event) =>
 	googleMaps.send();
 };
 
-
+// call the autolocate feature
 autoLocate();
 
 // call the serach weather function on submit
