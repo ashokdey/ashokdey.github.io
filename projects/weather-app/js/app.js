@@ -159,7 +159,7 @@ autoLocate();
 searchButton.addEventListener('click', searchWeather);
 
 //on Enter hit !
-inputBox.addEventListener('keypress', () => {
+inputBox.addEventListener('keypress', (event) => {
 	if (event.keyCode === 13 || event.which === 13) {
 		searchWeather(event);
 	}
