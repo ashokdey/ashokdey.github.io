@@ -20,7 +20,7 @@ let requestWeather = (URL) => {
 						//console.log(wData);
 						var weatherObject = new Weather(fullAddress, wData.currently.summary,
 						wData.currently.temperature, wData.currently.apparentTemperature, 
-						wData.currently.humidity);
+						wData.currently.humidity, wData.currently.windSpeed);
 
 						// finally show the weather
 						updateWeather(weatherObject);
@@ -61,19 +61,21 @@ let wSummary = document.querySelector('#summary');
 let wRealTemp = document.querySelector('#realTemp');
 let wFeelsLike = document.querySelector('#feelsLike');
 let wHumidity = document.querySelector('#humidity');
+let wWindSpeed = document.querySelector('#windSpeed');
 let inputBox = document.querySelector('#input-box');
 
 
 // helper functions
 
 //function constructor for weather object	
-function Weather(cityName, summary, realTemp, appareantTemp, humidity)
+function Weather(cityName, summary, realTemp, appareantTemp, humidity, windSpeed)
 {
 	this.cityName = cityName;
 	this.summary = summary;
 	this.realTemp = realTemp;
 	this.feelsLike = appareantTemp;
 	this.humidity = (humidity * 100).toFixed(2);
+	this.windSpeed = windSpeed.toFixed(2);
 }
 
 //function to update weather
@@ -84,6 +86,7 @@ let updateWeather = (wObj) =>
 	wRealTemp.textContent =  `${wObj.realTemp} \u00B0C`;
 	wFeelsLike.textContent = `Feels Like : ${wObj.feelsLike} \u00B0C`;
 	wHumidity.textContent = `Humidity : ${wObj.humidity}%`;
+	wWindSpeed.textContent = `Wind Speed : ${wObj.windSpeed} km/hr`
 	inputBox.value = '';
 	weatherBox.style.display = 'block';
 };
