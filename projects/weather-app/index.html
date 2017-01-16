@@ -1,7 +1,8 @@
 <!doctype html>
 <html>
 <head>
-	<title>WeatherApp</title>
+	<title>Weather Anytime | Ashok Dey</title>
+	<meta charset="utf-8">	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/main.css">
   	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
@@ -31,7 +32,7 @@
 	</div>
 	<br>
 	<footer>
-		<a href="https://darksky.net/poweredby/">Powered by Dark Sky</a>
+		<a href="https://darksky.net/poweredby/">Powered by Dark Sky </a> | &copy; <span class="copy"></span> Ashok Dey
 	</footer>
 	<script src="js/app.js"></script>
 	<script src="js/typed.js"></script>
@@ -43,6 +44,8 @@
 				loop : true
 			});
 		});
+		var date = new Date;
+		document.querySelector('.copy').innerHTML = date.getFullYear();
 	</script>
 </body>
 </html>
