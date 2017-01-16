@@ -1,6 +1,6 @@
 'use strict';
 
-let fullAddress = '';
+let fullAddress = 'In Your Location...';
 
 //get user location
 let requestWeather = (URL) => {
