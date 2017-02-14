@@ -55,11 +55,12 @@ app.controller('todoController', function($scope) {
     $scope.addNewTodo = (task) => {
         if(isLocalStorageEmpty){
             $scope.todo.items = [];
+            isLocalStorageEmpty = false;
         }
         $scope.todo.items.push({task, done : false});
         window.localStorage['ad-todo'] = angular.toJson($scope.todo.items); // to avoid $hashkey
     }
-    
+
     $scope.taskDone = () => {
         window.localStorage['ad-todo'] = angular.toJson($scope.todo.items); // to avoid $hashkey
     }
