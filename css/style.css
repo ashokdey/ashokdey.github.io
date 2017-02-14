@@ -49,9 +49,9 @@ custom fonts
 }
 
 .myHighlight-4 {
-    background: #ffd600;
-    color: #e65100 !important;
-    text-transform: uppercase;
+    background: lightyellow;
+    color: black !important;
+    text-transform: none;
     padding: 0.3em;
 }
 
