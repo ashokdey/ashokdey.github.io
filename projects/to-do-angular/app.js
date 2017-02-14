@@ -24,6 +24,7 @@ else if (window.localStorage['ad-todo'].length > 0) {
 
 app.controller('todoController', function($scope) {
     $scope.todo = model;
+    $scope.taskDetails = '';
     // function that counts the nummber of incomplete tasks
     $scope.incompleteCount = () => {
         let count = 0;
@@ -58,6 +59,7 @@ app.controller('todoController', function($scope) {
             isLocalStorageEmpty = false;
         }
         $scope.todo.items.push({task, done : false});
+        $scope.taskDetails = '';        
         window.localStorage['ad-todo'] = angular.toJson($scope.todo.items); // to avoid $hashkey
     }
 
