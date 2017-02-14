@@ -53,18 +53,19 @@ app.controller('todoController', function($scope) {
         $scope.todo.user = username;
     }
 
-    $scope.addNewTodo = (task) => {
-        if(isLocalStorageEmpty){
-            $scope.todo.items = [];
-            isLocalStorageEmpty = false;
-        }
-
+    $scope.addNewTodo = (task) => {        
         if(task.length) {
+            if(isLocalStorageEmpty){
+                $scope.todo.items = [];
+                isLocalStorageEmpty = false;
+            }
+
             $scope.todo.items.push({task, done : false});
             $scope.taskDetails = null;        
             window.localStorage['ad-todo'] = angular.toJson($scope.todo.items); // to avoid $hashkey
         }
     }
+    // function to invoke when the task is done
     $scope.taskDone = () => {
         window.localStorage['ad-todo'] = angular.toJson($scope.todo.items); // to avoid $hashkey
     }
