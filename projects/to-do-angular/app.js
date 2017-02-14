@@ -59,4 +59,8 @@ app.controller('todoController', function($scope) {
         $scope.todo.items.push({task, done : false});
         window.localStorage['ad-todo'] = angular.toJson($scope.todo.items); // to avoid $hashkey
     }
+    
+    $scope.taskDone = () => {
+        window.localStorage['ad-todo'] = angular.toJson($scope.todo.items); // to avoid $hashkey
+    }
 });

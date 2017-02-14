@@ -50,7 +50,7 @@
                             <!--add filter : {done : false} to filter out the done tasks-->
                             <tr ng-repeat="item in todo.items |  orderBy : 'done'">
                                 <td>{{item.task}}</td>
-                                <td><input type="checkbox" ng-model="item.done"></td>
+                                <td><input type="checkbox" ng-model="item.done" ng-click="taskDone()"></td>
                                 <td ng-if="!item.done"> Pending </td>
                                 <td ng-if="item.done"> <span class="text-success glyphicon glyphicon-ok"></span> </td>
                             </tr>
