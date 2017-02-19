@@ -1,7 +1,7 @@
 (function() {
     'use strict';
     
-    const myDataFile = '/data/dataFile.json';
+    const myDataFile = './data/dataFile.json';
 
     angular.module('classified').factory('classifiedFactory', function($http) {
         
