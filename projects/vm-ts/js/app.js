@@ -145,7 +145,7 @@ var CandyBarCategory = (function (_super) {
         return _this;
     }
     CandyBarCategory.prototype.getImageUrl = function () {
-        return this.imgPath + 'Candybar.png';
+        return this.imgPath + 'CandyBar.png';
     };
     return CandyBarCategory;
 }(ProductCategory));
