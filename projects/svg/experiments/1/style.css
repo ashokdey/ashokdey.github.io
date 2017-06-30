@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+}
+
+svg {
+    height: 800px;
+    widows: 800px;
+    margin-left: 30%;
+}
+
+.path {
+    stroke-dasharray: 6800;
+    stroke-dashoffset: 6800;
+    transition : 20s all;
+}
+
+svg:hover .path {
+    stroke-dashoffset: 0;
+}
