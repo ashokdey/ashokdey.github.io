@@ -1,10 +1,14 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#000000"><link rel="manifest" href="manifest.json"><link rel="shortcut icon" href="icon.ico"><link rel="stylesheet" href="fonts/icons.css"><script>
     if('serviceWorker' in navigator) {
-        if('serviceWorker' in navigator) {
-            navigator.serviceWorker
-           .register('/sw.js')
-           .then(function() { console.log("Service Worker Registered"); });
-        }
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((register) => {
+              console.log('worked', registeration);
+              console.log('ServiceWorker registration successful with scope: ', registeration.scope);
+            }).catch((err) => {
+              console.log('Error', err);
+            });
+      });
     }
     else {
     console.log('No support for SW');
