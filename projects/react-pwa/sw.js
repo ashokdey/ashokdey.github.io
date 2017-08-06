@@ -4,13 +4,13 @@ self.addEventListener('install',  event => {
   event.waitUntil(
   caches.open(cacheName).then(cache  => cache.addAll(
     [
-    '/static/js/bundle.js',
-    '/index.html', 
+    './static/js/bundle.js',
+    './index.html', 
     '/',
-    '/fonts/icons.css',
-    '/fonts/material.ttf',
-    '/fonts/material.woff',
-    '/fonts/material.woff2'
+    './fonts/icons.css',
+    './fonts/material.ttf',
+    './fonts/material.woff',
+    './fonts/material.woff2'
     ]
   ))
   );
