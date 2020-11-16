@@ -1,537 +1,444 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-  <title>Ashok Dey's Resume</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta content="Online Resume of Ashok Dey" name="description">
-  <meta content="Ashok Dey" name="author">
-  <meta content=
-  "ashok, ashok-dey, resume, online-resume,computer-science-engineering,student,btech,greater-noida, noida, new-delhi, ncr,accurate- institute-management-technology,web-developer,web-designer,undergraduate"
-  name="keywords">
-  <!--META ENDING-->
+    <!--HEAD BEGINNING-->
+    <!--META DATA KEYWORDS-->
+    <meta charset="utf-8">
+    <meta content="Personal Website of Ashok Dey" name="description">
+    <meta content=
+    "ashok-dey,computer-science-engineering,student,btech,greater-noida,accutate- institute-management-technology,web-developer,web-designer,robotics,undergraduate"
+    name="keywords">
+    <meta content="Ashok Dey" name="author"><!--META ENDING-->
+    <!--Title goes here-->
 
-  <link href="favicon.png" rel="shorcut icon">
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>  <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
-  <link type="text/css" rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Ashok Dey | Personal Website</title>
+    <!--Custom Stylesheets and Javascripts-->
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/main_style.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <!--The Favicon-->
+    <link href="favicon.png" rel="shorcut icon">
+    <!--The JAVASCRIPTS & jQUERY SCRIPTS-->
 
-</head>
+    <script src="js/jquery-min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+    type="text/javascript"></script>
+    <script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+</head><!--End of HEAD-->
+
 <body>
-    <!-- Custom Code -->
-    <header class = "intro blue darken-4 z-depth-1">
-        <h1 class="grey-text text-lighten-5">Ashok Dey</h1>
-        <h5 class="grey lighten-5 blue-text text-darken-4 z-depth-2">Fulll Stack Developer</h5>
-    </header>
-    <article class="container about"> <!-- About Starting-->
-        <h5 class="blue darken-4 grey-text text-lighten-5 z-depth-2"> About Me </h5>
-        <h6 class="blue-text text-darken-3">
-            Hello folks ! Welcome to my Online Resume. In short, I am a Fullstack developer and I follow a simple cycle :<span class="myBold blue-text" style="text-transform:none"> Think, Create, Deploy, Update.</span> That's All.
-        </h6>
-        <hr>
-        <article class="row"> <!-- Edu & Project Row -->
-            <!-- Education Col -->
-            <article class="education col l4 m12 s12">
-                <h5 class="blue darken-4 grey-text text-lighten-5 z-depth-2">Education</h5>
-                <section class="col s12">
-                    <ul class="collapsible popout">
-                        <li>
-                            <div class="collapsible-header"><i class="fa fa-graduation-cap grey-text text-darken-2"></i>
-                                <span class="myBold lime-text text-darken-4">
-                                    B.Tech in CSE
-                                </span>
-                            </div>
-                            <div class="collapsible-body light-green darken-4 grey-text text-lighten-4">
-                                <p>
-                                    Accurate Institute of Management &amp; Technology<br>
-                                    Expected : June 2016<br>
-                                    GPA : 7.1<br>
-                                    Greater Noida, UP 201306
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header"><i class="fa fa-university"></i>
-                                <span class="myBold light-green-text">
-                                    AISSCE : Class 12
-                                </span>
-                            </div>
-                            <div class="collapsible-body indigo darken-4 grey-text text-lighten-4">
-                                <p>
-                                    Board : CBSE<br>
-                                    Tata D.A.V School<br>
-                                    Passed: March 2011 Percentile : 64% <br>
-                                    Jamadoba, Dhanbad 828301
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header"><i class="fa fa-university"></i>
-                                <span class="myBold grey-text text-darken-2">
-                                    AISSE : Class 10
-                                </span>
-                            </div>
-                            <div class="collapsible-body grey darken-4 grey-text text-lighten-4">
-                                <p>
-                                    Board : CBSE<br>
-                                    Tata D.A.V School<br>
-                                    Passed: March 2009<br>
-                                    Percentile : 91%<br>
-                                    Jamadoba, Dhanbad 828301
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-            </article><!--Education Col Ends here -->
-            <!-- Projects Col Starts here -->
-            <article class="projects col l8 m12 s12">
-                <h5 class="blue darken-4 grey-text text-lighten-5 z-depth-2">Projects</h5>
-                <section class="col s12">
-                    <ul class="collapsible popout">
-                        <!-- Project 0 -->
-                        <li> 
-                            <div class="collapsible-header"><i class="fa fa-envelope-square blue-grey-text text-darken-4"></i>
-                                <span class="myBold cyan-text text-darken-4">
-                                    Send OTP/Messages to Contacts  
-                                </span>
-                            </div>
-                            <div class="collapsible-body">
-                                <div class="card myCard blue darken-3">
-                                    <div class="card-content white-text">
-                                      <span class="card-title">Application to Send SMS</span>
-                                      <p>
-                                          This applicattion uses the Twilio API to send Randonly generated 6-digit OTP/ Custom Messages to Saved contacts<br><br>  
-                                          <span class="myBold myHighlight">
-                                              Tech Stack: NodeJS, ExpressJS, EJS, Bootstrap, MongoDB, Mocha, Supertest
-                                          </span>
-                                      </p>
-                                    </div>
-                                    <div class="card-action">
-                                      <a href="https://send-otp.herokuapp.com/" target="_blank">Use the APP Now!</a>
-                                    </div>
-                                </div> <!--End of Card -->
-                            </div>
-                        </li>
-                        <!-- Project 1 -->
-                        <li> 
-                            <div class="collapsible-header"><i class="fa fa-dot-circle-o blue-grey-text text-darken-4"></i>
-                                <span class="myBold blue-grey-text text-darken-4">
-                                    Todo RESTful API
-                                </span>
-                            </div>
-                            <div class="collapsible-body">
-                                <div class="card myCard blue-grey darken-3">
-                                    <div class="card-content white-text">
-                                      <span class="card-title">RESTful API to manage Todos</span>
-                                      <p>
-                                          This API manages Todos and Users. It facilitates registering a user, logging in and create, update and delete todos<br><br>  
-                                          <span class="myBold myHighlight">
-                                              Tech Stack: NodeJS, ExpressJS, MongoDB, Mocha
-                                          </span>
-                                      </p>
-                                    </div>
-                                    <div class="card-action">
-                                      <a href="https://ad-todo-api.herokuapp.com" target="_blank">Use The API Now !</a>
-                                    </div>
-                                </div> <!--End of Card -->
-                            </div>
-                        </li>
-                        <!-- Project 2 -->
-                        <li> 
-                            <div class="collapsible-header"><i class="fa fa-desktop light-blue-text text-darken-3"></i>
-                                <span class="myBold light-blue-text text-darken-3">
-                                    Pixel Explosion in C++ and SDL2
-                                </span>
-                            </div>
-                            <div class="collapsible-body">
-                                <div class="card myCard light-blue lighten-1">
-                                    <div class="card-content white-text">
-                                      <span class="card-title">Pixel Simulation Using in C++</span>
-                                      <p>
-                                          C++ application that draws patterns with pixels. It uses an external library SDL2 that facilitates graphical programming and event trapping using C/C++<br><br>  
-                                          <span class="myBold myHighlight">
-                                              Tech Stack: C++ and SDL2
-                                          </span>
-                                      </p>
-                                    </div>
-                                    <div class="card-action">
-                                      <a href="https://github.com/ashokdey/Pixel_Explosion" target="_blank">Visit The Repository Now !</a>
-                                    </div>
-                                </div> <!--End of Card -->
-                            </div>
-                        </li>
-                        <!-- Project 3 -->
-                        <li> 
-                            <div class="collapsible-header"><i class="fa fa-tint indigo-text text-darken-3"></i>
-                                <span class="myBold indigo-text text-darken-3">
-                                    Weather Anytime
-                                </span>
-                            </div>
-                            <div class="collapsible-body">
-                                <div class="card myCard indigo lighten-1">
-                                    <div class="card-content white-text">
-                                      <span class="card-title">Weather Information in Browser</span>
-                                      <p>
-                                          A weather app that can track your location and give the weather condition of your location. Moreover you can even search for weather of different places using zip code, state, city or any address.<br><br>  
-                                          <span class="myBold myHighlight">
-                                              Tech Stack: HTML5 Geolocation API, DarkSkyAPI, jQuery, JS, HTML5, Ajax
-                                          </span>
-                                      </p>
-                                    </div>
-                                    <div class="card-action">
-                                      <a href="https://ashokdey.github.io/projects/weather-app/" target="_blank">Use the App Now !</a>
-                                    </div>
-                                </div> <!--End of Card -->
-                            </div>
-                        </li>
-                        <!-- Project 1 -->
-                        <li> 
-                            <div class="collapsible-header"><i class="fa fa-cubes orange-text text-darken-4"></i>
-                                <span class="myBold cyan-text text-darken-4">
-                                    Qurious
-                                </span>
-                            </div>
-                            <div class="collapsible-body">
-                                <div class="card myCard purple darken-3">
-                                    <div class="card-content white-text">
-                                      <span class="card-title">Lets Help Each Other</span>
-                                      <p>
-                                          A question answer platform. This is a major project containing more than 15 modules. Currently under development. it has few features of a social network like following an user and feeds.<br>
-                                          <span class="myBold myHighlight">
-                                              Tech Stack: HTML5, CSS3, PHP, MYSQL, jQuery, Bootstrap3
-                                          </span>
-                                      </p>
-                                    </div>
-                                    <div class="card-action">
-                                      <a href="http://www.qurious.xyz" target="_blank">Visit The Site Now !</a>
-                                    </div>
-                                </div> <!--End of Card -->
-                            </div>
-                        </li>
-                        <li> <!-- Project 2 -->
-                            <div class="collapsible-header"><i class="fa fa-comments-o teal-text text-darken-4"></i>
-                                <span class="myBold yellow-text text-accent-4">
-                                    Group Chat Application
-                                </span>
-                            </div>
-                            <div class="collapsible-body">
-                                <div class="card myCard teal darken-4">
-                                    <div class="card-content white-text">
-                                      <span class="card-title myLight">JustShout : Keep Shouting</span>
-                                      <p>
-                                          A simple chat application just in 35 lines.
-                                          No login required and anyone can join the chat. The chats are stored and fetched from database. It's responsive, uses Ajax and The brand new Material Design<br>
-                                          <span class="myBold myHighlight">
-                                              Tech stack: HTML5, CSS3, PHP, MySQL
-                                          </span>
-                                      </p>
-                                    </div>
-                                    <div class="card-action">
-                                      <a href="http://www.ashokdey.in/projects/justshout2/" target="_blank">Check the Shoughts !</a>
-                                      <a href="http://www.ashokdey.in/projects/justshout" target="_blank">Older Version</a>
-                                    </div>
-                                </div> <!--End of Card -->
-                            </div>
-                        </li>
-                        <li> <!-- Project 3 -->
-                            <div class="collapsible-header"><i class="material-icons pink-text text-darken-4">business</i>
-                                <span class="myBold grey-text text-darken-4">
-                                    Website for Intek
-                                </span>
-                            </div>
-                            <div class="collapsible-body">
-                                <div class="card myCard orange darken-4">
-                                    <div class="card-content white-text">
-                                      <span class="card-title">Intek Computer Education</span>
-                                      <p>
-                                          Yet another web development project.
-                                          This website is for a computer education
-                                          institute that is designed by me and is still under development. It will be redesigned again
-                                          and will be completed by Dec 2016<br>
-                                          <span class="myUpper myHighlight">
-                                            Tech Stack : HTML5, CSS3, PHP, MySQL, Bootstrap 3
-                                          </span>
-                                      </p>
-                                    </div>
-                                    <div class="card-action">
-                                      <a href="http://intek.ashokdey.in/" target="_blank">Have a Look</a>
-                                    </div>
-                                </div> <!--End of Card -->
-                            </div>
-                        </li>
-                        <li> <!-- Project 4 -->
-                            <div class="collapsible-header"><i class="fa fa-diamond"></i>
-                                <span class="myBold cyan-text text-darken-4">
-                                    Personal Website
-                                </span>
-                            </div>
-                            <div class="collapsible-body">
-                                <div class="card myCard green darken-4">
-                                    <div class="card-content white-text">
-                                      <span class="card-title myLight">More about me here</span>
-                                      <p>
-                                          This is my existence on the web.
-                                          The website was designed using
-                                          Photoshop CC. It's is kespt as simple
-                                          as possible and at the same time,
-                                          it's responsive too !<br>
-                                          <span class ="myBold myHighlight">
-                                              Tech Stack : HTML5, CSS3, jQuery
-                                          </span>
-                                        </p>
-                                    </div>
-                                    <div class="card-action">
-                                      <a href="http://www.ashokdey.in" target="_blank">Latest Version</a>
-                                      <a href="http://www.ashokdey.in/old" target="_blank">Older Version</a>
-                                    </div>
-                                </div> <!--End of Card -->
-                            </div>
-                        </li>
-                        <li> <!-- Project 5 -->
-                            <div class="collapsible-header"><i class="material-icons red-text text-darken-4">loyalty</i>
-                                <span class="myBold myUpper green-text text-darken-4">
-                                    Web Design Collections
-                                </span>
-                            </div>
-                            <div class="collapsible-body">
-                                <div class="card myCard blue darken-3">
-                                    <div class="card-content white-text">
-                                      <span class="card-title myLight">Design Collection</span>
-                                      <p>This is a collection of the website designs I have made as a hobby using Adobe Photoshop CS 6 and Adobe Photoshop CC. The graphics and toons used are borrowed from the internet freebies</p>
-                                    </div>
-                                    <div class="card-action">
-                                      <a href="https://drive.google.com/open?id=0Byqg5mck_vdLRWZnU3VLdWtpWUU" target= "_blank">View the Collection</a>
-                                    </div>
-                                </div> <!--End of Card -->
-                            </div>
-                        </li>
-                    </ul> <!-- END Of collapse  -->
-                </section>
-            </article><!--projects Col Ends here -->
-        </article> <!--Edu & Project Row END -->
-        <article class="row"> <!-- Skills Row -->
-            <article class="skills">
-                <h5 class="blue darken-4 grey-text text-lighten-4 z-depth-2">
-                    Skills
-                </h5>
-                <h6>
-                    Languages I know, Software Suites, Operating Systems and other Tools that
-                    I can use to create stuffs !
-                </h6>
-                <hr>
-                <ul class="collapsible popout">
-                    <li> <!-- Skill 1 Web Dev -->
-                        <div class="collapsible-header"><i class="fa fa-code indigo-text text-darken-4"></i>
-                            <span class="myBold blue-text text-darken-3">
-                                Web Development
-                            </span>
-                        </div>
-                        <div class="collapsible-body">
-                            <div class="card myCard orange accent-4">
-                                <div class="card-content white-text">
-                                    <span class="myLight">
-                                        Mostly I design and create web apps.
-                                        The languages I use are:
-                                    </span>
-                                    <p>
-                                        <span class ="myBold myHighlight-4">
-                                            HTML5, CSS3, JavaScript, TypeScript, jQuery, NodeJS, MongoDB, Angular 2
-                                        </span>
-                                   </p>
-                                </div> <!-- END card Content-->
-                            </div> <!--End of Card -->
-                        </div>
-                    </li>
-                    <li> <!-- Skill 2 Application Dev -->
-                        <div class="collapsible-header"><i class="fa fa-language teal-text text-darken-3"></i>
-                            <span class="myBold green-text text-darken-4">
-                                Programming Languages
-                            </span>
-                        </div>
-                        <div class="collapsible-body">
-                            <div class="card myCard light-green darken-4">
-                                <div class="card-content white-text">
-                                    <span class="myLight">
-                                        The programming languages I can code in are listed below:
-                                    </span>
-                                    <p>
-                                        <span class ="myBold myHighlight-4">
-                                            C, C++, PHP, Java, Python, JavaScript
-                                        </span>
-                                   </p>
-                                </div> <!-- END card Content-->
-                            </div> <!--End of Card -->
-                        </div>
-                    </li>
-                    <li> <!-- Skill 3 Softs  -->
-                        <div class="collapsible-header"><i class="fa fa-puzzle-piece pink-text text-darken-3"></i>
-                            <span class="myBold pink-text text-lighten-2">
-                                Softwares &amp; Code Editors
-                            </span>
-                        </div>
-                        <div class="collapsible-body">
-                            <div class="card myCard pink lighten-2">
-                                <div class="card-content white-text">
-                                  <span class="myLight">
-                                      I love to try new tools, editors and IDEs, the ones which
-                                      I use most frequently are listed below:
-                                  </span>
-                                  <p>
-                                      <span class ="myBold myHighlight-4">
-                                          Adobe Photoshop, Visual Studio,
-                                          CodeBlocks, Sublime Text, Atom,
-                                          VS Code, PowerShell, GCC.
-                                      </span>
-                                 </p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li> <!-- Skill 4 Databases  -->
-                        <div class="collapsible-header"><i class="fa fa-database lime-text text-accent-2"></i>
-                            <span class="myBold brown-text text-darken-4">
-                                Databases
-                            </span>
-                        </div>
-                        <div class="collapsible-body">
-                            <div class="card myCard grey darken-2">
-                                <div class="card-content white-text">
-                                  <span class="myLight">
-                                      Worked on relational database and now trying
-                                      Document Oriented database.
-                                  </span>
-                                  <p>
-                                      <span class ="myBold myHighlight-4">
-                                          MySQL &amp; MongoDB
-                                      </span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li> <!-- Skill 4 Frameworks  -->
-                        <div class="collapsible-header"><i class="fa fa-heartbeat red-text text-darken-4"></i>
-                            <span class="myBold orange-text text-darken-1">
-                                OS &amp; Frameworks
-                            </span>
-                        </div>
-                        <div class="collapsible-body">
-                            <div class="card myCard deep-orange lighten-2">
-                                <div class="card-content white-text">
-                                  <span class="myLight">
-                                      Now a days I am falling for JavaScript and trying lots of new frameworks. But I have tried the following frameworks as well :
-                                  </span>
-                                  <p>
-                                      <span class ="myBold myHighlight-4">
-                                          Bootstrap 3, Foundation 5, Materialize CSS,
-                                          NodeJS, jQuery, Electron, Mocha, Socket IO, ExpressJS
-                                      </span>
-                                    </p>
-                                    <span class="myLight">
-                                        I have worked in the following Opearting Systems :
-                                    </span>
-                                    <p>
-                                        <span class ="myBold myHighlight-4">
-                                            Windows XP &amp; above, Ubuntu 12.10 &amp; above
-                                        </span>
-                                      </p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul> <!-- END of Collapse -->
-            </article>
-        </article> <!-- Skils Row ENDS -->
-        <article class="row"> <!-- Interests row -->
-            <article class="interests s12"> <!-- Interests col-->
-                <h5 class="blue darken-4 grey-text text-lighten-4 z-depth-2">
-                    Interests
-                </h5>
-                <h6>
-                    I always try to keep myself updated with the latest news and trends of Software Development and the filed of Technology.
-                </h6>
-                <hr>
-                <h6>
-                    My keen interest lies in the following :
-                </h6>
-                <div class="row">
-                    <div class="col s12 l4  m8 offset-m2">
-                        <a class="waves-effect waves-light btn yellow darken-4"><i class="material-icons left">receipt</i>Data Structures</a>
-                    </div>
-                    <div class="col s12 l4 m8 offset-m2">
-                        <a class="waves-effect waves-light btn teal darken-4"><i class="material-icons left">group_work</i>Operating Systems</a>
-                    </div>
-                    <div class="col s12 l4 m8 offset-m2">
-                        <a class="waves-effect waves-light btn green darken-4"><i class="material-icons left">settings_remote</i>Arduino</a>
-                    </div>
-                </div> <!-- Rrow End -->
-            </article> <!--Interest Col Ends -->
-        </article><!-- Interests Row-->
+    <!--Starting of BODY-->
+
+    <header>
+        <!--HEADER Starting-->
+
+        <nav>
+            <!--NAVIGATION-->
+            <a class="logo" href="#"></a> <!--LOGO-->
+
+            <ul>
+                <li><a class=" home active" href="#home">HOME</a></li>
+
+                <li><a class="about-me" href="#about">ABOUT</a></li>
+
+                <li class="ri8"><a class="skills" href=
+                "#skills">SKILLS</a></li>
+
+                <li><a class="contact" href="#contact">CONTACT</a></li>
+            </ul>
+        </nav><!--End of NAVIGATION-->
+    </header><!--End of HEADER-->
+
+    <section class="section" id="home">
+        <!--HOME SECTION BEGINS-->
+        <!--HEADING GROUP-->
+
+        <h1 class="animated fadeInUp"><span class="special bold">Hello There !</span>
+        I am <span class="special bold">Ashok Dey.</span></h1>
+
+        <h2 class="h2 special bold animated bounceInDown">Pioneering, Probing,
+        Prorammer, Developer &amp; Designer</h2><!--END of HEADINGS-->
+        <!--INTRO DIV BEGINS-->
+
+        <div class="intro">
+            <!--MY PIC-->
+            <img alt="My Pic" class="animated slideInLeft" src=
+            "images/me3.png"> <!--INTRO Text Beginning-->
+
+            <div class="intro-text animated slideInRight">
+                <h3 class="special bold">In a Nutshell :</h3>
+
+                <blockquote>
+                    <p>I'm a Multi-Disciplined, Self-Learner Geek &amp;
+                    Computer Science Engineering Undergrad <span class=
+                    "special">@ Accurate Institute of Management &amp;
+                    Technology</span> developing websites, building embedded
+                    systems, electronic hacks, coding and constantly exploring
+                    the fascinating world of Technology.</p>
+
+                    <p>Don't just think, do experiments with your thinking,
+                    fail, try again, finally master the skills then deploy them
+                    and earn/ help others to learn. Never give up.</p><br>
+                </blockquote>
+                <!--SOCIAL DIV BEGINS-->
+                <div class="social animated fadeInUp" style=
+                "-webkit-animation-duration: 4s; -webkit-animation-delay: 3s; -moz-animation-duration: 4s; -moz-animation-delay: 3s; -ms-animation-duration: 4s; -ms-animation-delay: 3s; -o-animation-duration: 4s; -o-animation-delay: 3s;">
+
+                    <a class="round twitter" href=
+                    "http://www.twitter.com/3Dforce007" target="_blank" title=
+                    "Twitter Profile"></a> 
+                    <a class="round facebook" href=
+                    "http://www.facebook.com/3Dforce007/info" target="_blank"
+                    title="Facebook Profile"></a> 
+                    <a class="round google" href=
+                    "http://www.plus.google.com/+AshokDey/about" target=
+                    "_blank" title="Google Plus Profile"></a> 
+                    <a class=
+                    "round linked-in" href=
+                    "http://www.linkedin.com/in/ashokdey100" target="_blank"
+                    title="Linked In Profile"></a>
+
+                </div><!--End of SOCIAL div-->
+            </div><!--INTRO-TEXT Ends Here-->
+        </div><!--End of INRTO div-->
+    </section><!--End of Section-HOME-->
+    <!--Beginning ABOUT Section-->
+
+    <section class="section" id="about">
+        <!--ABOUT ME-->
+
+        <div class="myself">
+            <h2 class="h2 bold special upper">About Me</h2><!--INTRO PARA-->
+
+            <p class="about">I am a <span class="special2">Tech-Savvy, Self
+            Learner, Self Motivated &amp; Introvert Student.</span> | A native of <span class="special2">Dhanbad, Jharkhand</span> presently at <span class="special2">Noida, UP</span> | 
+            <span class="special2">Occasional Web Developer and
+            Designer-</span> I use to <span class="special2">Design &amp;
+            Code</span> websites in free time to boost my creativity. |  
+            <span class="special2">Programmer</span> by <span class=
+            "special2">Passion-</span> It's amazing to see how this world is
+            running on human codes and I code to make my work easier. |
+            <span class="special2">Electronics and Robotics Enthusiast-</span>
+            Making robots was my chilhdood dream and now I am tunring it into
+            reality. | I am also a <span class="special2">Keen Observer and Deep
+            Thinker.</span> | Knowledge is endless and I am always on the look
+            out for new amazing topic to know &amp; learn. Above all, I focus
+            on being <span class="special2">Creative and Work Smart.</span></p>
+
+            <p class="about">I always try to keep myself updated with the
+            latest news and trends related to the field of <span class=
+            "special2">Computing.</span></p><!--INTRO PARA ENDING-->
+        </div><!--ABOUT ME ENDING-->
+        <!--MY INTERESTS-->
+
+        <div class="interest">
+            <h2 class="h2 bold special upper">My Interests</h2>
+
+            <ul>
+                <li>Object Oriented Programming</li>
+
+                <li>Data Structures</li>
+
+                <li>Algorithms</li>
+
+                <li>Robotics &amp; DIY</li>
+
+                <li>Linux OS</li>
+
+                <li>Android OS</li>
+            </ul>
+        </div><!--MY INTEREST ENDING-->
+        <!--MY APPROACH-->
+
+        <div class="approach">
+            <h2 class=" bold special upper">My simple, yet efffective
+            development approach</h2>
+
+            <div class="app-pic"></div><!--APPROACH PIC-->
+        </div><!--APPROACH ENDING-->
+    </section><!--End of ABOUT Section-->
+    <!--SKILL SECTION BEGINS-->
+
+    <section class="section" id="skills">
+        <h2 class="h2 special bold upper">My Skillset</h2><!--SKILLS HEADING-->
+
+        <div class="main-skills">
+            <!--MAIN-SKILLS-->
+            <!--DEVELOPMENT SKILLS-->
+
+            <div class="dev margin-b">
+                <p class="upper special heading">Coding Experience</p>
+                <!--HEADING-->
+
+                <p class="skills-head bold"><br>
+                HTML 5</p>
+
+                <div class="progress">
+                    <div class="meter1"></div>
+                </div>
+
+                <p class="skills-head bold"><br>
+                CSS 3</p>
+
+                <div class="progress">
+                    <div class="meter2"></div>
+                </div>
+
+                <p class="skills-head bold"><br>
+                JavaScript</p>
+
+                <div class="progress">
+                    <div class="meter3"></div>
+                </div>
+
+                <p class="skills-head bold"><br>
+                jQuery</p>
+
+                <div class="progress">
+                    <div class="meter4"></div>
+                </div>
+
+                <p class="skills-head bold"><br>
+                PHP</p>
+
+                <div class="progress">
+                    <div class="meter5"></div>
+                </div>
+
+                <p class="skills-head bold"><br>
+                C/C++</p>
+
+                <div class="progress">
+                    <div class="meter6"></div>
+                </div>
+
+                <p class="skills-head bold"><br>
+                Python</p>
+
+                <div class="progress">
+                    <div class="meter7"></div>
+                </div>
+
+                <p class="skills-head bold"><br>
+                MySQL</p>
+
+                <div class="progress">
+                    <div class="meter8"></div>
+                </div>
+            </div><!--END of DEVELOPMENT SKILLS-->
+        </div><!--END of MAIN-SKILLS-->
+        <!--OTHER SKILLLS-->
+
+        <div class="other-skills">
+            <!--ENVIRONMENTS-->
+
+            <div class="os margin-b">
+                <p class="upper special heading">Working Environments</p>
+                <!--HEADING-->
+
+                <p class="skills-head bold"><br>
+                Windows</p>
+
+                <div class="progress">
+                    <div class="meter9"></div>
+                </div>
+
+                <p class="skills-head bold"><br>
+                GNU/Linux</p>
+
+                <div class="progress">
+                    <div class="meter10"></div>
+                </div>
+            </div><!--END of ENVIRONMENTS-->
+            <!--SOFTWARE SKILLS-->
+
+            <div class="softs margin-b">
+                <p class="upper special heading">Software Suites</p>
+                <!--HEADING-->
+
+                <p class="skills-head bold"><br>
+                Adobe Photoshop</p>
+
+                <div class="progress">
+                    <div class="meter11"></div>
+                </div>
+
+                <p class="skills-head bold"><br>
+                Microsoft Office</p>
+
+                <div class="progress">
+                    <div class="meter12"></div>
+                </div>
+            </div><!--END of SOFTWARE SKILLS-->
+            <!--ONGOING/LEARNING SKILLS-->
+
+            <div class="ongoing margin-b">
+                <p class="upper special heading">Learning/Ongoing</p>
+                <!--HEADING-->
+
+                <p class="skills-head bold"><br>
+                Arduino &amp; Embedded Systems</p>
+
+                <div class="progress">
+                    <div class="meter13"></div>
+                </div>
+
+                <p class="skills-head bold"><br>
+                Shell Scripting</p>
+
+                <div class="progress">
+                    <div class="meter14"></div>
+                </div>
+            </div><!--END of LEARNING SKILLS-->
+        </div><!--END of OTHER SKILLS-->
+        <!--BUTTON-->
+        <br>
+        <a class="button" href="files/Ashok-Dey-Recent[01].pdf" target=
+        "_blank"><span class="upper">Download My Resume</span></a> 
+        <!--END of BUTTON-->
+    </section><!--END of SKILL SECTION-->
+    <!--CONTACT SECTION BEGINS-->
+
+    <section class="section" id="contact">
+        <div class="con-form">
+            <!--CONTACT FORM DIV-->
+
+            <h2 class="upper special bold">Get in Touch</h2>
+
+            <p>I'd love you get a feedback from you. Please feel free to get in
+            touch.</p>
+
+            <p class="special small">* Fields are mandatory.</p>
+
+            <div class="success">
+                <!--SUCCESS MESSAGE-->
+
+                <h2 class="msg-thanks special">Form Submitted
+                Successfully!</h2>
+
+                <p>Thank You. I am pleased to get your message. I'll get back
+                to you ASAP!</p>
+            </div><!--END of SUCCESS MSG-->
+            <!--FORM BEGINNNING-->
+
+            <form id="contact-form" action="#" method="post"> <!--CONTACT FORM-->
+                    
+                    <!--NAME LABEL AND INPUT-->
+
+                    <label>What everyone call you?</label>
+                    <input id="vname" name="vname" type=text placeholder="Your Name" required>
+                    <div class="error" id="name_error">Opps.. you forgot to type your name!</div>
+                    
+                    <!--EMAIL LABEL AND INPUT-->
+                    <label>Where can I mail you back?</label>
+                    <input id="email" name="email" type=email placeholder="Your Email" required>
+                    <div class="error" id="email_eror"> Opps.. you forgot to type your email address!</div>
+
+                    <!--TEXTAREA LABEL AND INPUT-->
+                    <label>What's on your mind?</label>
+                    <textarea id="msg" name="message" cols="40" rows="8" placeholder="Your Message" required></textarea>
+                    <div class="error" id="msg_error"> Please type your message.</div>
+
+                    <!--SUBMIT-BUTTON-->
+                    <input id="submit" type="Submit" value="Send" disabled>
+
+                </form><!--END of FORM-->
+        </div><!--END of "CON-FORM"-->
+
+        <aside>
+            <!--BEGINNNING OF SIDE CONTENTS-->
+            <!--LOCATION AND MAP (Static Map)-->
+
+            <div class="location">
+                <h2 class="special upper bold">Here's My Location</h2>
+                <div class="map"><!--MAP HERE-->
+                <img alt="My Location-Sector-18, Noida, UP, India 201301" src=
+                "http://maps.googleapis.com/maps/api/staticmap?key=AIzaSyB0u16vHn8Scn41VNnNDyRvC6JwiZ-Vghs&amp;size=500x300&amp;zoom=12&amp;sensor=false&amp;markers=sector+18,+noida,+uttar+pradesh,+201301,"
+                title="My Location"></div><!--END of MAP DIV-->
+            </div><!--END OF LOCATION-->
+        </aside><!--END of SIDEBAR-->
+
         <footer>
-            <!--Download Resume FAB-->
-            <div class="fixed-action-btn verical" style="bottom: 45px; right:24px; width:50px">
-              <a class="btn-floating btn-large waves-effect waves-light red"
-                 href="https://drive.google.com/open?id=0Byqg5mck_vdLUHYwM0NfQjR0aFU" target="_blank">
-                <i class="material-icons">description</i>
-              </a>
-            </div>
-          
-            <!--Social Links FAB-->
-            <div class="fixed-action-btn verical" style="bottom: 45px; left: 24px; width:50px">
-              <a class="btn-floating btn-large waves-effect waves-light blue darker-4">
-                <i class="large material-icons">call</i>
-              </a>
-              <ul>
-                <li>
-                    <a class="btn-floating black" href="https://github.com/ashokdey" target="_blank">
-                    <i class="fa fa-github-alt"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="btn-floating blue darken-2" href="https://linkedin.com/in/ashokdey" target="_blank">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="btn-floating grey darken-4" href="https://stackoverflow.com/users/2804236/ashok-dey" target="_blank">
-                        <i class="fa fa-stack-overflow"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="btn-floating blue darken-4" href="https://www.facebook.com/ashokdey001" target="_blank">
-                        <i class="fa fa-facebook-f"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="btn-floating blue lighten-2" href="https://twitter.com/ashokdey001" target="_blank">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="btn-floating red" href="https://plus.google.com/+AshokDey/" target="_blank">
-                        <i class="fa fa-google-plus"></i>
-                    </a>
-                </li>
-              </ul>
-            </div>
-            <div class="card-pannel blue-text text-darken-4">
-                <p>
-                    Copyright (c) 2016 All Rights Reserved. Made with lots of <i class="fa fa-heart red-text"></i> , <i class="fa fa-html5 green-text text-darken-4"></i> and <i class="fa fa-css3 brown-text text-darken-4"></i>.
-                </p>
-            </div>
+            <p class="special thanks">Thanks for your visit and the valuable
+            time you spent while browsing my website.</p><br>
 
-        </footer>
-    </article> <!-- ABOUT container ENDS Here-->
+            <p>Connect with my various social profiles below :</p>
 
+            <div class="social">
+                <a class="twitter" href="http://www.twitter.com/3Dforce007"
+                target="_blank" title="Twitter Profile"></a> <a class=
+                "facebook" href="http://www.facebook.com/3Dforce007/info"
+                target="_blank" title="Facebook Profile"></a> <a class="google"
+                href="http://www.plus.google.com/+AshokDey/about" target=
+                "_blank" title="Google Plus Profile"></a> <a class="linked-in"
+                href="http://www.linkedin.com/in/ashokdey100" target="_blank"
+                title="Linked In Profile"></a> <a class="quora" href=
+                "https://www.quora.com/Ashok-Dey" target="_blank" title=
+                "Quora Account"></a> <a class="stackof" href=
+                "http://www.stackoverflow.com/users/2804236/3dforce007" target=
+                "_blank" title="Stack Overflow Account"></a> <a class="github"
+                href="http://www.github.com/3dforce007" target="_blank" title=
+                "Github Account"></a> <a class="flipkart" href=
+                "http://www.flipkart.com/user-profiles/sniper007" target=
+                "_blank" title="My Reviews on Flipkart"></a>
+            </div><!--END of SOCIAL DIV-->
 
+            <p class="myemail small">You can also mail me : <a class="special"
+            href="#" title="My Email Address">ashokdey100@gmail.com</a></p><br>
+            <br>
 
-    <!-- End of Custom Code -->
-    <!-- jQuery is required by Materialize to function -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+            <p class="small copyright">© 2014 | Ashok Dey | All Rights
+            Reserved.</p><br>
+            <br>
+        </footer><!--END of FOOTER-->
+    </section><!--END of CONTACT SECTION-->
+    <!--JAVASCRIPT BEGINS-->
     <script type="text/javascript">
-        //custom JS code
-    </script>
+            // for SMOOTH SCROLLING
 
+                $(function() {
+                  $('a[href*=#]:not([href=#])').click(function() {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+                      var target = $(this.hash);
+                      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                      if (target.length) {
+                        $('html,body').animate({
+                          scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                      }
+                    }
+                  });
+                }); // End of Scrolling
+
+                $('nav li a').click(function(e) {
+                    e.preventDefault();
+                    $('a').removeClass('active');
+                    $(this).addClass('active');
+                });
+
+            // For METERS 
+
+                $('.skills').click(function() {
+
+                    $('.meter1').animate({width:'95%'}, 3000, 'swing');
+                    $('.meter2').animate({width:'90%'}, 3000, 'swing');
+                    $('.meter3').animate({width:'30%'}, 3000, 'swing');
+                    $('.meter4').animate({width:'50%'}, 3000, 'swing');
+                    $('.meter5').animate({width:'40%'}, 3000, 'swing');
+                    $('.meter6').animate({width:'70%'}, 3000, 'swing');
+                    $('.meter7').animate({width:'20%'}, 3000, 'swing');
+                    $('.meter8').animate({width:'25%'}, 3000, 'swing');
+                    $('.meter9').animate({width:'95%'}, 3000, 'swing');
+                    $('.meter10').animate({width:'40%'}, 3000, 'swing');
+                    $('.meter11').animate({width:'55%'}, 3000, 'swing');
+                    $('.meter12').animate({width:'80%'}, 3000, 'swing');
+                    $('.meter13').animate({width:'35%'}, 3000, 'swing');
+                    $('.meter14').animate({width:'45%'}, 3000, 'swing');
+
+                });
+    </script>
 </body>
 </html>
