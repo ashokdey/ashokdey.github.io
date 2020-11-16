@@ -1,0 +1,160 @@
+body {
+    background: #343434;
+}
+
+svg {
+    height: 800px;
+    margin-left: 15%;
+}
+
+svg rect {
+    fill: none;
+    stroke: #fafafa;
+    stroke-width: 5px;
+    stroke-dasharray: 1350;
+    stroke-dashoffset: 1350;
+    animation: 4s rectangle 1 forwards;
+}
+
+svg line {
+    stroke: #fafafa;
+    stroke-dasharray: 285;
+    stroke-dashoffset: 285;
+}
+
+line.first {
+    stroke: grey;
+    stroke-width: 1px;
+    animation: 7s lines-1 1 forwards;
+}
+
+line.second {
+    stroke: grey;
+    stroke-width: 1px;
+    animation: 5s lines-2 1 forwards;
+}
+
+
+line.underline {
+    animation: 5s lines-u infinite alternate;
+}
+
+svg path {
+    fill: #fafafa;
+    stroke: #fafafa;
+}
+
+#Name path {
+    fill: none;
+    stroke-dasharray: 257;
+    stroke-dashoffset: 257;
+    animation: 4s name 1 forwards;
+}
+
+#Tagline path {
+    stroke: yellow;
+    fill: none;
+    stroke-dasharray: 121;
+    stroke-dashoffset: 121;
+    animation: 5s tagline infinite alternate;
+}
+
+#Name path:hover {
+    animation: 3s name-hover 1 forwards;
+}
+
+
+
+/*Css animations here */
+
+@keyframes rectangle {
+    from {
+        stroke-dashoffset: 1350;
+        opacity: 0;
+        stroke: purple;
+    }
+    to {
+        stroke-dashoffset: 0;
+        opacity: 1;
+        stroke: plum;
+    }
+}
+
+@keyframes lines-1 {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: -350;
+        stroke: plum;
+    }
+}
+
+@keyframes lines-2 {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: -250;
+        stroke: plum;        
+    }
+}
+
+@keyframes lines-3 {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: -320;
+    }
+}
+
+@keyframes lines-u {
+    from {
+        stroke-dashoffset: 1000;
+        stroke: green;
+    }
+    to {
+        stroke-dashoffset: -350;
+        stroke: seagreen;
+        stroke-width: 2px;
+    }
+}
+
+@keyframes tagline {
+    from {
+        stroke-dashoffset: 121;
+    }
+    to {
+        stroke-dashoffset: 0;
+        stroke: #fafafa;
+    }
+}
+
+@keyframes name {
+    from {
+        stroke-dashoffset: 257;
+        opacity: 0; 
+        transform: rotate(45deg);
+        stroke: yellow;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+        opacity: 1;
+        transform: rotate(0deg);
+        stroke: orangered;
+    }
+}
+
+@keyframes name-hover {
+    from {
+        stroke-dashoffset: 257;
+        stroke: orange; 
+    }
+    to {
+        stroke-dashoffset: 0;
+        stroke: orangered;
+        fill: orangered;
+    }
+}

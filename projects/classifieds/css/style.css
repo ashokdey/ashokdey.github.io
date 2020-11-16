@@ -1,0 +1,28 @@
+/*md-toolbar {
+    position: fixed;
+    top: 0;
+}
+
+body {
+    padding-top: 70px;
+}
+
+.pad-fix {
+    padding-top: 70px;
+}*/
+
+button .material-icons {
+    margin-top: -15px;
+}
+
+.clr-btn {
+    margin-top: -5px;
+}
+
+.hide-filter-btn {
+    margin-top: -5px;
+}
+
+.mySelect {
+    margin-top : -6px;
+}
